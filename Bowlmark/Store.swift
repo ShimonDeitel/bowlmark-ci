@@ -17,6 +17,8 @@ final class BowlmarkStore: ObservableObject {
         self.fileURL = dir.appendingPathComponent("bowlmark_data.json")
         if ProcessInfo.processInfo.arguments.contains("-uiTestReset") {
             try? FileManager.default.removeItem(at: fileURL)
+            UserDefaults.standard.removeObject(forKey: "bowlmark_reminders_enabled")
+            UserDefaults.standard.removeObject(forKey: "bowlmark_reminder_hour")
         }
         load()
         if pets.isEmpty {
