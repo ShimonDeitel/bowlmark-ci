@@ -6,7 +6,7 @@ final class BowlmarkStore: ObservableObject {
     @Published private(set) var pets: [Pet] = []
     @Published private(set) var entries: [FeedingEntry] = []
 
-    static let freePetLimit = 2
+    static let freePetLimit = 3
 
     private let fileURL: URL
     private let calendar = Calendar.current
