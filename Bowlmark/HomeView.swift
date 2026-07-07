@@ -153,8 +153,10 @@ struct PetBowlCard: View {
                             .font(.caption)
                             .foregroundStyle(BMTheme.inkFaded)
                     }
+                    .accessibilityElement(children: .combine)
                 }
                 .buttonStyle(.plain)
+                .accessibilityIdentifier("petNameLabel_\(status.pet.name)")
 
                 Spacer()
 
