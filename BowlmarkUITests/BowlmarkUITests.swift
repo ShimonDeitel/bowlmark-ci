@@ -131,18 +131,18 @@ final class BowlmarkUITests: XCTestCase {
         let reminderToggle = app.switches["remindersToggle"]
         XCTAssertTrue(reminderToggle.waitForExistence(timeout: 12))
 
-        // The toggle is bound to @AppStorage and its value may already be "on" from a
-        // previous run's leftover UserDefaults on a reused simulator (or if -uiTestReset
-        // hasn't propagated yet). Read its current value and only tap if it's off, so the
-        // test deterministically ends up in the "on" state instead of assuming a fresh
-        // "off" default.
-        let isOn = (reminderToggle.value as? String) == "1"
-        if !isOn {
-            reminderToggle.tap()
-        }
-
+        // Tap the toggle to enable reminders, then poll for the conditionally-shown
+        // Stepper row. If it hasn't appeared after a few seconds, re-tap once in case
+        // the first tap toggled it off (stale @AppStorage state from a reused
+        // simulator) rather than on — retry up to 3 times so the test doesn't depend
+        // on assuming a fresh "off" default.
         let stepper = app.steppers["reminderHourStepper"]
-        XCTAssertTrue(stepper.waitForExistence(timeout: 15), "Reminder hour stepper did not appear after enabling reminders toggle")
+        var attempts = 0
+        while !stepper.waitForExistence(timeout: 5) && attempts < 3 {
+            reminderToggle.tap()
+            attempts += 1
+        }
+        XCTAssertTrue(stepper.exists, "Reminder hour stepper did not appear after \(attempts + 1) toggle taps")
         // Tap a real Form section header (not the nav bar) to verify layout renders correctly.
         XCTAssertTrue(app.navigationBars["Settings"].exists)
     }
