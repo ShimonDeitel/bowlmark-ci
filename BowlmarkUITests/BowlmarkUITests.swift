@@ -135,15 +135,19 @@ final class BowlmarkUITests: XCTestCase {
         // retry window on the CI simulator). Test the real keyboard-dismiss
         // behavior where it actually applies: the Add Pet form, which has real
         // TextFields and the same .dismissKeyboardOnTap() modifier.
+        // Use the Edit Pet form (tapping an existing seeded pet) rather than
+        // Add Pet — seed data ships exactly 2 pets and freePetLimit is also 2,
+        // so tapping addPetButton opens the paywall instead of the form,
+        // which made petNameField never appear.
         let app = launchApp()
-        let addButton = app.buttons["addPetButton"]
-        XCTAssertTrue(addButton.waitForExistence(timeout: 12))
-        addButton.tap()
+        let petLabel = app.buttons["petNameLabel_Whiskers"]
+        XCTAssertTrue(petLabel.waitForExistence(timeout: 12))
+        petLabel.tap()
 
         let nameField = app.textFields["petNameField"]
         XCTAssertTrue(nameField.waitForExistence(timeout: 12))
         nameField.tap()
-        nameField.typeText("Rex")
+        nameField.typeText(" Jr")
         XCTAssertTrue(app.keyboards.element.exists, "Keyboard did not appear after focusing a text field")
 
         // Tap a real Form section header (not the nav bar / toolbar chrome)
