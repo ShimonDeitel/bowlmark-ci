@@ -128,6 +128,7 @@ jobs:
         run: pip3 install --quiet --break-system-packages pyjwt cryptography
 
       - name: Upload app screenshot (APP_IPHONE_67) via ASC API
+        if: env.APP_ID != ''
         env:
           ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
           ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
