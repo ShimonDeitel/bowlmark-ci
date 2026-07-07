@@ -116,10 +116,19 @@ final class BowlmarkUITests: XCTestCase {
         XCTAssertFalse(app.staticTexts["Whiskers"].waitForExistence(timeout: 6), "Pet was not deleted")
     }
 
-    func testFreeLimitTriggersPaywallAtThirdPet() throws {
+    func testFreeLimitTriggersPaywallAtFourthPet() throws {
+        // Seed data ships 2 pets (Whiskers, Rex) and freePetLimit is 3, so add
+        // one more real pet first to reach the limit before expecting the paywall.
         let app = launchApp()
         let addButton = app.buttons["addPetButton"]
         XCTAssertTrue(addButton.waitForExistence(timeout: 12))
+        addButton.tap()
+        let nameField = app.textFields["petNameField"]
+        XCTAssertTrue(nameField.waitForExistence(timeout: 12))
+        nameField.tap()
+        nameField.typeText("Buddy")
+        app.buttons["savePetButton"].tap()
+
         addButton.tap()
         XCTAssertTrue(app.staticTexts["Bowlmark Pro"].waitForExistence(timeout: 12), "Paywall did not appear after hitting the free pet limit")
     }

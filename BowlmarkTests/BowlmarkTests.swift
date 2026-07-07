@@ -33,13 +33,14 @@ final class BowlmarkTests: XCTestCase {
     }
 
     @MainActor
-    func testFreeLimitBlocksThirdPet() {
+    func testFreeLimitBlocksFourthPet() {
         _ = store.addPet(name: "A", species: "Cat", mealsPerDay: 2, isPro: false)
         _ = store.addPet(name: "B", species: "Dog", mealsPerDay: 2, isPro: false)
+        _ = store.addPet(name: "C", species: "Bird", mealsPerDay: 1, isPro: false)
         XCTAssertFalse(store.canAddPet(isPro: false))
-        let third = store.addPet(name: "C", species: "Bird", mealsPerDay: 1, isPro: false)
-        XCTAssertFalse(third)
-        XCTAssertEqual(store.pets.count, 2)
+        let fourth = store.addPet(name: "D", species: "Fish", mealsPerDay: 1, isPro: false)
+        XCTAssertFalse(fourth)
+        XCTAssertEqual(store.pets.count, 3)
     }
 
     @MainActor
