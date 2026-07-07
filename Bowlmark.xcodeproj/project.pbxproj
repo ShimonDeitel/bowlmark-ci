@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0678769FEAE706A34C26910E /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F0DFA3F4E9D159B28C7909 /* App.swift */; };
+		3B421EA02C1EF2FB2B01922B /* PurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F945317F10FC734E4170AC /* PurchaseManager.swift */; };
+		6A68270493F00F6C6EBC7479 /* BowlmarkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87536A84536697D41F759107 /* BowlmarkTests.swift */; };
+		7355F31062DFD8DDD73C341C /* Bowlmark.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 85F9C185B970BCBCA44AB177 /* Bowlmark.storekit */; };
+		8AE9E0E5625AF8FBD21E1B28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99CFF63BFB5530CF4C5AD96D /* Assets.xcassets */; };
+		95942CDB2051221A5E9FDCFE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5280F4BA6C521C08164AF65B /* HomeView.swift */; };
+		AD245E945BBDC55AF608BC78 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D802E3C4CFA3AB018D5537 /* PaywallView.swift */; };
+		B120B3A4626427F0B111C35C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE5C397AA48CAAC7F708BEB /* SettingsView.swift */; };
+		BA3A81A5F4E7A3617E361074 /* BowlmarkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE022DC84DADA78BD4FC78AA /* BowlmarkUITests.swift */; };
+		D4CB773DE2C2DFC760D2B005 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE287B4AB35F5454EEFCA271 /* RootTabView.swift */; };
+		D882E6C72B342A2F0B9DEA2E /* Sheets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BEC0F7845F8094A0012914 /* Sheets.swift */; };
+		E9C92E17822EC4D182272F8F /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6E84AEC2A1FAD7B914338B /* Theme.swift */; };
+		FBE2B08C2AC92E15580187F3 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3D7D6F3D6336550E2337A0 /* Store.swift */; };
+		FBFBDB6C79DA61FFEB1E9F0F /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC5008CAA061935A2BD677A /* Models.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2FB99CB9B35D75BA194C007A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B39AD47E083ADE59902D247 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F4DC7B6458ADD09BE9819C7;
+			remoteInfo = Bowlmark;
+		};
+		5CFED3800B8BA4ACE1B338BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B39AD47E083ADE59902D247 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F4DC7B6458ADD09BE9819C7;
+			remoteInfo = Bowlmark;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4A6E84AEC2A1FAD7B914338B /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		5280F4BA6C521C08164AF65B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		5B3D7D6F3D6336550E2337A0 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		5EE5C397AA48CAAC7F708BEB /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		60A41F58F9D603E8577FCE29 /* BowlmarkUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = BowlmarkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		64BEC0F7845F8094A0012914 /* Sheets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sheets.swift; sourceTree = "<group>"; };
+		72B69C31133FD2667B0F8D1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		85F9C185B970BCBCA44AB177 /* Bowlmark.storekit */ = {isa = PBXFileReference; path = Bowlmark.storekit; sourceTree = "<group>"; };
+		87536A84536697D41F759107 /* BowlmarkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlmarkTests.swift; sourceTree = "<group>"; };
+		99CFF63BFB5530CF4C5AD96D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0F0DFA3F4E9D159B28C7909 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		A7D802E3C4CFA3AB018D5537 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
+		AE022DC84DADA78BD4FC78AA /* BowlmarkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlmarkUITests.swift; sourceTree = "<group>"; };
+		AE80CA71F6C91DFF116D0444 /* Bowlmark.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Bowlmark.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8F945317F10FC734E4170AC /* PurchaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseManager.swift; sourceTree = "<group>"; };
+		DCC5008CAA061935A2BD677A /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		E898354AF8C31447C68F32AA /* BowlmarkTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = BowlmarkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE287B4AB35F5454EEFCA271 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0410DF233EC54F70B2F7F272 /* Bowlmark */ = {
+			isa = PBXGroup;
+			children = (
+				A0F0DFA3F4E9D159B28C7909 /* App.swift */,
+				99CFF63BFB5530CF4C5AD96D /* Assets.xcassets */,
+				5280F4BA6C521C08164AF65B /* HomeView.swift */,
+				72B69C31133FD2667B0F8D1B /* Info.plist */,
+				DCC5008CAA061935A2BD677A /* Models.swift */,
+				A7D802E3C4CFA3AB018D5537 /* PaywallView.swift */,
+				B8F945317F10FC734E4170AC /* PurchaseManager.swift */,
+				FE287B4AB35F5454EEFCA271 /* RootTabView.swift */,
+				5EE5C397AA48CAAC7F708BEB /* SettingsView.swift */,
+				64BEC0F7845F8094A0012914 /* Sheets.swift */,
+				5B3D7D6F3D6336550E2337A0 /* Store.swift */,
+				4A6E84AEC2A1FAD7B914338B /* Theme.swift */,
+			);
+			path = Bowlmark;
+			sourceTree = "<group>";
+		};
+		4E8755851FE9D9B928F34DC1 = {
+			isa = PBXGroup;
+			children = (
+				0410DF233EC54F70B2F7F272 /* Bowlmark */,
+				935306D21A9DECE95DF3CE89 /* BowlmarkTests */,
+				EC21F7468FA9FEE61B6E0E84 /* BowlmarkUITests */,
+				85F9C185B970BCBCA44AB177 /* Bowlmark.storekit */,
+				BEF14FF883CC2D63B43642F2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		935306D21A9DECE95DF3CE89 /* BowlmarkTests */ = {
+			isa = PBXGroup;
+			children = (
+				87536A84536697D41F759107 /* BowlmarkTests.swift */,
+			);
+			path = BowlmarkTests;
+			sourceTree = "<group>";
+		};
+		BEF14FF883CC2D63B43642F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE80CA71F6C91DFF116D0444 /* Bowlmark.app */,
+				E898354AF8C31447C68F32AA /* BowlmarkTests.xctest */,
+				60A41F58F9D603E8577FCE29 /* BowlmarkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC21F7468FA9FEE61B6E0E84 /* BowlmarkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AE022DC84DADA78BD4FC78AA /* BowlmarkUITests.swift */,
+			);
+			path = BowlmarkUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6F4DC7B6458ADD09BE9819C7 /* Bowlmark */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19E1090F77BACC8BAD9B58FA /* Build configuration list for PBXNativeTarget "Bowlmark" */;
+			buildPhases = (
+				BAD0E075AEBBF77CB037B6D5 /* Sources */,
+				BA7F9EDF4F4338A957B59187 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bowlmark;
+			packageProductDependencies = (
+			);
+			productName = Bowlmark;
+			productReference = AE80CA71F6C91DFF116D0444 /* Bowlmark.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7E33B1072B4C421FF9E031B6 /* BowlmarkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E4F3401C9B8B613B0404BE3 /* Build configuration list for PBXNativeTarget "BowlmarkTests" */;
+			buildPhases = (
+				AE1B41891E31E61942971985 /* Sources */,
+				73756ED4F2B52F87D2EC835A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D317DAED4112527D1F3EC8F /* PBXTargetDependency */,
+			);
+			name = BowlmarkTests;
+			packageProductDependencies = (
+			);
+			productName = BowlmarkTests;
+			productReference = E898354AF8C31447C68F32AA /* BowlmarkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DD727B2D9FE0B4E42A853B04 /* BowlmarkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F247654B272D503FE211D40D /* Build configuration list for PBXNativeTarget "BowlmarkUITests" */;
+			buildPhases = (
+				0EEEDB96483758A9C0FCD1C2 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD3121B9BE9031B5EC39154B /* PBXTargetDependency */,
+			);
+			name = BowlmarkUITests;
+			packageProductDependencies = (
+			);
+			productName = BowlmarkUITests;
+			productReference = 60A41F58F9D603E8577FCE29 /* BowlmarkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B39AD47E083ADE59902D247 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					6F4DC7B6458ADD09BE9819C7 = {
+						DevelopmentTeam = W7Q885Q59C;
+						ProvisioningStyle = Automatic;
+					};
+					7E33B1072B4C421FF9E031B6 = {
+						DevelopmentTeam = W7Q885Q59C;
+						ProvisioningStyle = Automatic;
+					};
+					DD727B2D9FE0B4E42A853B04 = {
+						DevelopmentTeam = W7Q885Q59C;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6F4DC7B6458ADD09BE9819C7;
+					};
+				};
+			};
+			buildConfigurationList = 81DDB5B62E85966E27FBC714 /* Build configuration list for PBXProject "Bowlmark" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 4E8755851FE9D9B928F34DC1;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = BEF14FF883CC2D63B43642F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6F4DC7B6458ADD09BE9819C7 /* Bowlmark */,
+				7E33B1072B4C421FF9E031B6 /* BowlmarkTests */,
+				DD727B2D9FE0B4E42A853B04 /* BowlmarkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		73756ED4F2B52F87D2EC835A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7355F31062DFD8DDD73C341C /* Bowlmark.storekit in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA7F9EDF4F4338A957B59187 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AE9E0E5625AF8FBD21E1B28 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0EEEDB96483758A9C0FCD1C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA3A81A5F4E7A3617E361074 /* BowlmarkUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE1B41891E31E61942971985 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A68270493F00F6C6EBC7479 /* BowlmarkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAD0E075AEBBF77CB037B6D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0678769FEAE706A34C26910E /* App.swift in Sources */,
+				95942CDB2051221A5E9FDCFE /* HomeView.swift in Sources */,
+				FBFBDB6C79DA61FFEB1E9F0F /* Models.swift in Sources */,
+				AD245E945BBDC55AF608BC78 /* PaywallView.swift in Sources */,
+				3B421EA02C1EF2FB2B01922B /* PurchaseManager.swift in Sources */,
+				D4CB773DE2C2DFC760D2B005 /* RootTabView.swift in Sources */,
+				B120B3A4626427F0B111C35C /* SettingsView.swift in Sources */,
+				D882E6C72B342A2F0B9DEA2E /* Sheets.swift in Sources */,
+				FBE2B08C2AC92E15580187F3 /* Store.swift in Sources */,
+				E9C92E17822EC4D182272F8F /* Theme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7D317DAED4112527D1F3EC8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F4DC7B6458ADD09BE9819C7 /* Bowlmark */;
+			targetProxy = 2FB99CB9B35D75BA194C007A /* PBXContainerItemProxy */;
+		};
+		DD3121B9BE9031B5EC39154B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F4DC7B6458ADD09BE9819C7 /* Bowlmark */;
+			targetProxy = 5CFED3800B8BA4ACE1B338BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3E2E35D317075C5618993414 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shimondeitel.bowlmark.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bowlmark.app/Bowlmark";
+			};
+			name = Release;
+		};
+		435961862DE6C3F7B5FBC648 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = W7Q885Q59C;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		51C9A0C2D6CD98578049AA90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = W7Q885Q59C;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		87B331433D0D0372101D81AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Bowlmark/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shimondeitel.bowlmark;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		905AD3DF5B493DC454CEA081 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shimondeitel.bowlmark.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = Bowlmark;
+			};
+			name = Release;
+		};
+		AB1B6E686A71B5FC8F967ED9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Bowlmark/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shimondeitel.bowlmark;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		AE40C5179B4C4F6CCA071788 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shimondeitel.bowlmark.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bowlmark.app/Bowlmark";
+			};
+			name = Debug;
+		};
+		D737D25D9F2EB1F9A74C796F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shimondeitel.bowlmark.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = Bowlmark;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19E1090F77BACC8BAD9B58FA /* Build configuration list for PBXNativeTarget "Bowlmark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB1B6E686A71B5FC8F967ED9 /* Debug */,
+				87B331433D0D0372101D81AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7E4F3401C9B8B613B0404BE3 /* Build configuration list for PBXNativeTarget "BowlmarkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE40C5179B4C4F6CCA071788 /* Debug */,
+				3E2E35D317075C5618993414 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		81DDB5B62E85966E27FBC714 /* Build configuration list for PBXProject "Bowlmark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51C9A0C2D6CD98578049AA90 /* Debug */,
+				435961862DE6C3F7B5FBC648 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F247654B272D503FE211D40D /* Build configuration list for PBXNativeTarget "BowlmarkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D737D25D9F2EB1F9A74C796F /* Debug */,
+				905AD3DF5B493DC454CEA081 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7B39AD47E083ADE59902D247 /* Project object */;
+}
